@@ -35,3 +35,7 @@ edits_inprogress files are located on Journal Node edits directory specified by 
 * Install the custom alert using Curl command as following:
 `cd /var/lib/ambari-server/resources/host_scripts`
 `curl -u ambariUser:ambariPassword -i -H 'X-Requested-By:ambari' -X POST -d @alerts-test.json http://node1.example.com:8080/api/v1/clusters/ClusterDemo/alert_definitions`
+
+## Alert in action
+
+![](https://github.com/dineshchitlangia/JNEditsAlert/blob/master/alert.png)
