@@ -1,0 +1,18 @@
+{
+  "AlertDefinition" :
+      {
+        "service_name": "HDFS",
+        "scope": "HOST",
+        "enabled": true,
+        "description": "[CUSTOM] This is a custom host-level alert which will check regularly for any blockers for updating edits in JN nodes.",
+        "name": "JN-EDITS-CHECK",
+        "component_name": "JOURNALNODE",
+        "interval": 1,
+        "label": "Journal Node edits health",
+        "source": {
+          "path": "jn_edits_tracker.py",
+          "type": "SCRIPT"
+        }
+      }
+}
+
